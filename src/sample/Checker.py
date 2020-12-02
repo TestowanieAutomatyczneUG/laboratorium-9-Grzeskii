@@ -1,4 +1,4 @@
-from sample.Player import Player
+from src.sample.PlayerClass import Player
 
 class Checker:
     def __init__(self):
