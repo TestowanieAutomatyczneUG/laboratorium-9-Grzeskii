@@ -11,6 +11,13 @@ class TestCar(unittest.TestCase):
         car.needsFuel.return_value = True
 
         self.assertEqual(car.needsFuel(), True)
+    
+    def test_get_engine_temperature(self):
+        car = Car()
+        car.getEngineTemperature = Mock(name = "getEngineTemperature")
+        car.getEngineTemperature.return_value = 115
+
+        self.assertEqual(car.getEngineTemperature(), 115)
 
 
 if __name__ == '__main__':
